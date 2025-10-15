@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower</title>
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #463c3c;
+      font-family: sans-serif;
+    }
+
+    .greetings {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .greetings span {
+      opacity: 0;
+      animation: fadeInOut 2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Delay tiap huruf agar muncul bergantian */
+    .greetings span:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .greetings span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .greetings span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .greetings span:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    .greetings span:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+
+    .greetings span:nth-child(6) {
+      animation-delay: 1s;
+    }
+
+    .greetings span:nth-child(7) {
+      animation-delay: 1.2s;
+    }
+
+    .greetings span:nth-child(8) {
+      animation-delay: 1.4s;
+    }
+
+    .description {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .button a button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #7bf195;
+      color: rgb(0, 0, 0);
+    }
+
+    .button a button:hover {
+      background-color: #85ff99;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greetings">
+    <span>H</span>
+    <span>A</span>
+    <span>L</span>
+    <span>L</span>
+    <span>O</span>
+    <span>!</span>
+    <span>:</span>
+    <span>D</span>
+  </div>
+
+  <div class="description">
+    <span>Hadiah</span>
+  </div>
+
+  <div class="button">
+    <a href="ultah.html">
+      <button>click meh :D</button>
+    </a>
+  </div>
+</body>
+
+</html>
